@@ -91,6 +91,7 @@ module Padrino
       # @return [TrueClass]
       #
       def setup_application!
+        puts self.locale_path
         return if @_configured
         self.require_dependencies
         self.default_filters!
